@@ -1,0 +1,51 @@
+import React from 'react';
+import BannerImage from './components/BannerImage';
+import StatusBar from './components/StatusBar';
+import ContentArea from './components/ContentArea';
+import AppContext from './components/AppContext';
+
+import './App.css';
+
+class App extends React.Component {
+
+  componentDidMount() {
+    console.log("App.componentDidMount( )");
+
+    // at this point, both the StatusBar and the UserManagher have rendered
+    // let's connect them!
+
+    this.userManager.idChangeSubscribe(this.statusBar.handleUserIdChange);
+  }
+
+  constructor(props) {
+    super(props)
+
+    console.log("App.constructor( )");
+
+    this.statusBar = null;
+    this.userManager = null;
+  }
+
+  render() {
+      return (
+
+        <AppContext.Provider value={this}>
+
+          <div className="App">
+            <BannerImage />
+            <div>
+              <h1>Welcome to My PhotoExpress</h1>
+              <h2>Nature Beauty</h2>
+            </div>
+            <StatusBar />
+            <ContentArea />
+          </div>
+
+          </AppContext.Provider>
+
+      );
+    }
+
+  }
+
+export default App;

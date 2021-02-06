@@ -1,0 +1,40 @@
+{
+  "itemlist" :
+  [
+    {
+      "src"      : "MumbaiGarden.jpg",
+      "caption"  : "The beauty of Mumbai",
+      "location" : "Mumbai, Andheri"
+    },
+
+    {
+      "src"      : "JapaneseGarden1.jpg",
+      "caption"  : "Japanese Park",
+      "location" : "Garden, Japan"
+    },
+
+    {
+      "src"      : "FranceGarden.jpg",
+      "caption"  : "Miracle",
+      "location" : "France"
+    },
+
+    {
+      "src"      : "DubaiGarden.jpg",
+      "caption"  : "Glamrous",
+      "location" : "Dubai,US"
+    },
+
+    {
+      "src"      : "USGarden.jpg",
+      "caption"  : "US Beauty",
+      "location" : " USA"
+    },
+
+    {
+      "src"      : "ChinaGarden.jpg",
+      "caption"  : "Tawai ",
+      "location" : "China"
+    }
+  ]
+}
